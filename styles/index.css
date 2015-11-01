@@ -9,15 +9,19 @@ body{
 .calculator-font{
     font-size: 20px;
     color: darkgreen;
+    font-family: 'Play', sans-serif;
 }
 
 .label-font{
     font-size: 20px;
     color: #999;
+    font-family: 'Play', sans-serif;
 }
 
 .title-font{
     font-size: 20px;
+    font-family: 'Play', sans-serif;
+
 }
 
 hr{
