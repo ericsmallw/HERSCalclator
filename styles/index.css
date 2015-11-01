@@ -1,0 +1,28 @@
+body{
+    background: #f6f6f6;
+}
+
+.input-dollar-sign{
+    background: #DFF0D8 !important;
+}
+
+.calculator-font{
+    font-size: 20px;
+    color: darkgreen;
+}
+
+.label-font{
+    font-size: 20px;
+    color: #999;
+}
+
+.title-font{
+    font-size: 20px;
+}
+
+hr{
+    background: #DFF0D8;
+    color: black;
+    height: 2px;
+    width: 70%
+}
