@@ -4,7 +4,7 @@
 
 var app = angular.module("app", []);
 
-app.controller("CalculatorController", function($scope){
+app.controller("Controller", function($scope){
 
 });
 
