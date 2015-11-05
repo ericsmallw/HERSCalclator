@@ -8,11 +8,11 @@
     <div class="col-xs-4">
         <div class="input-group">
             <div class="input-group-addon input-dollar-sign">$</div>
-            <input class="form-control" type="number" id="gasInput" ng-model="utilityValues.gas">
+            <input class="form-control" type="number" id="gasInput" ng-model="gas">
         </div>
     </div>
     <div class="col-xs-4">
-        <span class="calculator-font">${{ utilityValues.gas * 12}}</span>
+        <span class="calculator-font">${{ gas * 12}}</span>
     </div>
 </div>
 <div class="row">
@@ -20,10 +20,10 @@
     <div class="col-xs-4">
         <div class="input-group">
             <div class="input-group-addon input-dollar-sign">$</div>
-            <input class="form-control" type="number" id="waterInput"  ng-model="utilityValues.water"></div>
+            <input class="form-control" type="number" id="waterInput"  ng-model="water"></div>
     </div>
     <div class="col-xs-4">
-        <span class="calculator-font">${{ utilityValues.water *12 }}</span>
+        <span class="calculator-font">${{ water *12 }}</span>
     </div>
 </div>
 <div class="row">
@@ -31,10 +31,10 @@
     <div class="col-xs-4">
         <div class="input-group">
             <div class="input-group-addon input-dollar-sign">$</div>
-            <input class="form-control" type="number" id="elecInput"  ng-model="utilityValues.electricity"></div>
+            <input class="form-control" type="number" id="elecInput"  ng-model="electricity"></div>
     </div>
     <div class="col-xs-4">
-        <span class="calculator-font">${{ utilityValues.electricity * 12 }}</span>
+        <span class="calculator-font">${{ electricity * 12 }}</span>
     </div>
 </div>
 <hr>
@@ -49,12 +49,9 @@
 </div>
 <hr />
 <div class="row">
-    <div class="col-xs-4">
-        <span class="title-font">Select A HERS Score</span>
-    </div>
-    <div class="col-xs-2">
-        <select ng-model="selectedScore" class="form-control" name="eScore" id="hersScore" ng-options="obj.score for obj in hersScores" ng-change="calculateSavings()">
-        </select>
+    <div class="col-xs-12">
+        <div id="slider" ui-slider min="0" max="130" ng-model="hersScore"></div>
+        <div id="hersScore" ng-bind="hersScore" ></div>
     </div>
 </div>
 <hr />
