@@ -21,7 +21,6 @@ body{
 .title-font{
     font-size: 20px;
     font-family: 'Play', sans-serif;
-
 }
 
 hr{
@@ -59,6 +58,7 @@ hr{
     position: absolute;
     width: 20px;
     margin-top: 20px;
+
     margin-left: -10px;
     text-align: center;
 }
@@ -71,6 +71,7 @@ hr{
     border: black 5px solid;
     margin:auto;
     margin-top:5%;
+    margin-bottom: 5%;
 }
 
 #hersScore{
