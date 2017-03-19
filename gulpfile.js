@@ -5,6 +5,7 @@ var gulp = require('gulp');
 var argv = require('yargs').argv;
 var shell = require('gulp-shell');
 
+
 gulp.task('deploy', () => {
     if(argv.branch == 'test'){
         return gulp.src('*.js', {read: false}).pipe(shell([
