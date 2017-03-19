@@ -9,6 +9,9 @@ var shell = require('gulp-shell');
 gulp.task('deploy', () => {
     if(argv.branch == 'test'){
         return gulp.src('*.js', {read: false}).pipe(shell([
+            'git checkout test',
+            'git pull',
+            'npm install',
             'echo test2 >> test4.txt'
         ]));
     }
