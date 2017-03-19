@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'cd /home/ubuntu/HERSCalculator'
-                sh 'gulp deploy --branch $BRANCH_NAME'
+                sh 'gulp deploy --branch test'
             }
         }
     }
