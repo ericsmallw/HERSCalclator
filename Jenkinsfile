@@ -3,7 +3,10 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'echo $BRANCH_NAME >> /home/ubuntu/test.txt'
+                sh 'cd /home/ubuntu/HERSCalculator
+                sh 'git pull'
+                sh 'npm install'
+                sh 'gulp deploy --branch $BRANCH_NAME'
             }
         }
     }

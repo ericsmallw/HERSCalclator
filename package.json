@@ -1,0 +1,24 @@
+{
+  "name": "hcalc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericsmallwood/HERSCalclator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericsmallwood/HERSCalclator/issues"
+  },
+  "homepage": "https://github.com/ericsmallwood/HERSCalclator#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.6.3",
+    "yargs": "^7.0.2"
+  }
+}
