@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'echo ${env.BRANCH_NAME} >> /home/ubuntu/test.txt'
+                sh 'echo $BRANCH_NAME >> /home/ubuntu/test.txt'
             }
         }
     }
