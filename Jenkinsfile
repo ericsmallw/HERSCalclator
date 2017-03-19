@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                    sh 'node --version >> /home/ubuntu/test2.txt'
+                    sh 'node --version'
             }
         }
     }
